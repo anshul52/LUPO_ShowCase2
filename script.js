@@ -217,10 +217,9 @@ function changeColorBack(p1,p2){
 }
 
 //-------------responsive------------------
-var menu = document.querySelector("#h6");
 var nsr = document.querySelector("#nav_slider_responsive");
 var close = document.querySelector(".close");
-var svg = document.querySelector("#n2 svg")
+var svg = document.querySelector("#svg_n2 path")
 
 var flag = false;
 close.addEventListener("click",function(){
@@ -228,15 +227,16 @@ close.addEventListener("click",function(){
         close.innerHTML = 'CLOSE'
         close.style.color = '#d6d6d6'
         nsr.style.top  = "0%";
-        nsr.style.opacity = 1 
-        svg.style.fill = 'whitex'
+        nsr.style.opacity = 1; 
+        svg.style.fill = 'white';
         flag = true;
     }
     else if(flag==true){
         close.innerHTML = 'MENU'
         close.style.color = '#d11f1f'
         nsr.style.top  = "101%";
-        nsr.style.opacity = 0 
+        nsr.style.opacity = 0;
+        svg.style.fill = 'black'; 
         flag = false;
     }
 })

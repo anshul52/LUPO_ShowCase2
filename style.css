@@ -1565,14 +1565,13 @@ html,body{
             transform: translateX(-100%);
         }
     }
+    /* #svg_n2 path{ */
+        /* fill: #101010; */
+        /* background-color: red; */
+        /* mix-blend-mode: difference; */
+    /* } */
     
 }
 
 
 
-svg{
-    color: #fff;
-    fill: #fff;
-    /* background-color: red; */
-    mix-blend-mode: difference;
-}
