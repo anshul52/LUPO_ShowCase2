@@ -1567,3 +1567,12 @@ html,body{
     }
     
 }
+
+
+
+svg{
+    color: #fff;
+    fill: #fff;
+    /* background-color: red; */
+    mix-blend-mode: difference;
+}

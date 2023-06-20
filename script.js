@@ -220,26 +220,8 @@ function changeColorBack(p1,p2){
 var menu = document.querySelector("#h6");
 var nsr = document.querySelector("#nav_slider_responsive");
 var close = document.querySelector(".close");
+var svg = document.querySelector("#n2 svg")
 
-// var flag = false;
-// if(flag==false){
-//     close.addEventListener("click",function(){
-//         close.innerHTML = 'CLOSE'
-//         close.style.color = '#d6d6d6'
-//         nsr.style.top  = "0%";
-//         nsr.style.opacity = 1 
-//     })
-//     flag = true;
-// }
-// else if(flag==true){
-//     close.addEventListener("click",function(){
-//         close.innerHTML = 'MENU'
-//         close.style.color = '#d11f1f'
-//         nsr.style.top  = "101%";
-//         nsr.style.opacity = 0 
-//     })
-//     flag = false;
-// }
 var flag = false;
 close.addEventListener("click",function(){
     if(flag==false){
@@ -247,6 +229,7 @@ close.addEventListener("click",function(){
         close.style.color = '#d6d6d6'
         nsr.style.top  = "0%";
         nsr.style.opacity = 1 
+        svg.style.fill = 'whitex'
         flag = true;
     }
     else if(flag==true){
